@@ -19,10 +19,11 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.3.0</version>
+            <version>4.2.2</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <!-- Why need? because: OS.isFamilyMac() -->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
