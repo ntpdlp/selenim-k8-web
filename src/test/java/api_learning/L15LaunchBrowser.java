@@ -3,7 +3,7 @@ package api_learning;
 import driver.DriverFactory;
 import org.openqa.selenium.WebDriver;
 
-public class LaunchBrowser {
+public class L15LaunchBrowser {
 
     public static void main(String[] args) {
 
