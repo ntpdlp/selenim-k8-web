@@ -13,22 +13,14 @@ public class L17FrameHandling implements Urls {
 
         WebDriver driver = DriverFactory.getChromeDriver();
         try{
-            driver.get(baseUrl.concat(dropdownSlug));
-            WebElement dropdownElem = driver.findElement(By.id("dropdown"));
-            SelectMyExt optionSelect = new SelectMyExt(dropdownElem);
-
-            optionSelect.selectByIndex(1);
-            Thread.sleep(1000);
-
-            optionSelect.selectByValue("2");
-            Thread.sleep(1000);
-
-            optionSelect.selectByVisibleText("Option 1");
-            Thread.sleep(1000);
-
-            //extension by yourself
-            optionSelect.selectOption02();
-            Thread.sleep(1000);
+            driver.get(baseUrl.concat(iframeSlug));
+            WebElement iframe = driver.findElement(By.cssSelector("[id$=\"_ifr\"]"));
+            driver.switchTo().frame(iframe);
+            WebElement paragraphElem = driver.findElement(By.id("tinymce"));
+            paragraphElem.click();
+            paragraphElem.clear();
+            paragraphElem.sendKeys("hello, summer !!");
+            Thread.sleep(2000);
 
         }catch (Exception e){
             e.printStackTrace();
