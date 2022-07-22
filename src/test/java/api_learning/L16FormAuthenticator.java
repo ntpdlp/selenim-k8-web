@@ -4,7 +4,7 @@ import driver.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class FormAuthenticator {
+public class L16FormAuthenticator {
 
     public static void main(String[] args) {
 
