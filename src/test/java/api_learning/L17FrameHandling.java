@@ -22,8 +22,6 @@ public class L17FrameHandling implements Urls {
             driver.get(baseUrl.concat(iframeSlug));
             switchToEmbeddedIFrame(driver);
 
-            System.out.println("From Application: return back to default frame for other tasks ....");
-            driver.switchTo().defaultContent();
 
             driver.findElement(By.linkText("Elemental Selenium")).click();
             List<String> windowids = new ArrayList<>(driver.getWindowHandles());
@@ -46,6 +44,9 @@ public class L17FrameHandling implements Urls {
         paragraphElem.click();
         paragraphElem.clear();
         paragraphElem.sendKeys("hello, summer !!");
+
+        System.out.println("From Application: return back to default frame for other tasks ....");
+        driver.switchTo().defaultContent();
     }
 
 
