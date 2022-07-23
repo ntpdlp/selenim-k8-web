@@ -18,45 +18,79 @@ public class L17JSAlert implements Urls {
     private static By jsAlert = By.cssSelector("[onclick=\"jsAlert()\"]");
     private static By jsConfirm = By.cssSelector("[onclick=\"jsConfirm()\"]");
     private static By jsPrompt = By.cssSelector("[onclick=\"jsPrompt()\"]");
+
+    //waiting time
+    private static final int MILLION_SECONDS = 2000;
     public static void main(String[] args) {
 
         WebDriver driver = DriverFactory.getChromeDriver();
 
         try{
             driver.get(baseUrl.concat(jsAlertSlug));
-
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
 
             //JSAlert
-            driver.findElement(jsAlert).click();
-            Alert jsAlert = wait.until(ExpectedConditions.alertIsPresent());
-            System.out.println(jsAlert.getText());
-            jsAlert.accept();
-            Thread.sleep(1000);
+            navigateJSAlert(driver,wait, jsAlert ,true);
+            Thread.sleep(MILLION_SECONDS);
 
             //JSConfirm
-            driver.findElement(jsConfirm).click();
-            Alert jsConfirm = wait.until(ExpectedConditions.alertIsPresent());
-            System.out.println(jsConfirm.getText());
-            jsConfirm.dismiss();
-            Thread.sleep(1000);
+            navigateJSAlert(driver,wait, jsConfirm ,true);
+            Thread.sleep(MILLION_SECONDS);
 
             //JSPrompt
-            driver.findElement(jsPrompt).click();
-            Alert jsPrompt = wait.until(ExpectedConditions.alertIsPresent());
-            System.out.println(jsPrompt.getText());
-            jsPrompt.sendKeys("Hi !!");
-            Thread.sleep(2000);
-            jsPrompt.accept();
-            System.out.println(driver.findElement(By.id("result")).getText());
-            Thread.sleep(2000);
-
+            navigateJSAlertAndProvidePrompt(driver,wait,jsPrompt,true);
+            Thread.sleep(MILLION_SECONDS);
 
         }catch (Exception e){
             e.printStackTrace();
         }
 
         driver.quit();
+    }
+
+    public static Alert getJSAlert(WebDriver driver, WebDriverWait wait, By bySelector) throws InterruptedException {
+
+        Alert jsAlert=null;
+        try{
+            driver.findElement(bySelector).click();
+            jsAlert = wait.until(ExpectedConditions.alertIsPresent());
+            Thread.sleep(MILLION_SECONDS);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return jsAlert;
+    }
+
+    public static void navigateJSAlert(WebDriver driver, WebDriverWait wait, By bySelector, boolean isAccept){
+        try{
+            Alert jsAlert = getJSAlert(driver,wait,bySelector);
+            System.out.println(jsAlert.getText());
+            if(isAccept){
+                jsAlert.accept();
+            }else{
+                jsAlert.dismiss();
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    public static void navigateJSAlertAndProvidePrompt(WebDriver driver, WebDriverWait wait, By bySelector,boolean isAccept){
+
+        try{
+            Alert jsAlert = getJSAlert(driver,wait,bySelector);
+            jsAlert.sendKeys("Hi There!! million times");
+            Thread.sleep(MILLION_SECONDS);
+            if(isAccept){
+                jsAlert.accept();
+            }else{
+                jsAlert.dismiss();
+            }
+            System.out.println(driver.findElement(By.id("result")).getText());
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
     }
 
 }
