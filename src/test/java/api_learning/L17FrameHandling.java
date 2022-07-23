@@ -21,13 +21,10 @@ public class L17FrameHandling implements Urls {
         try{
             driver.get(baseUrl.concat(iframeSlug));
             switchToEmbeddedIFrame(driver);
-
-
-            driver.findElement(By.linkText("Elemental Selenium")).click();
-            List<String> windowids = new ArrayList<>(driver.getWindowHandles());
-            driver.switchTo().window(windowids.get(SECOND_WINDOW));
             Thread.sleep(2000);
-            System.out.println("The second tab windows url is: " + driver.getCurrentUrl());
+
+            //Extra Try: how to get url from second window tab
+            switchToSecondWindowTab(driver);
             Thread.sleep(2000);
 
         }catch (Exception e){
@@ -49,5 +46,11 @@ public class L17FrameHandling implements Urls {
         driver.switchTo().defaultContent();
     }
 
+    public static void switchToSecondWindowTab(WebDriver driver){
+        driver.findElement(By.linkText("Elemental Selenium")).click();
+        List<String> windowids = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(windowids.get(SECOND_WINDOW));
+        System.out.println("The second tab windows url is: " + driver.getCurrentUrl());
+    }
 
 }
