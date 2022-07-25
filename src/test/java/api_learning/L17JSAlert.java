@@ -24,10 +24,10 @@ public class L17JSAlert implements Urls {
     public static void main(String[] args) {
 
         WebDriver driver = DriverFactory.getChromeDriver();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
 
         try{
             driver.get(baseUrl.concat(jsAlertSlug));
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
 
             //JSAlert
             navigateJSAlert(driver,wait, jsAlert ,true);
