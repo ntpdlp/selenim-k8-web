@@ -17,11 +17,17 @@ public class L18ExplicitWait implements Urls {
     static private By taolaoSel = By.cssSelector("#nofoundID");
     public static void main(String[] args) {
        WebDriver driver = DriverFactory.getChromeDriver();
-       driver.get(Urls.baseUrl.concat(loginSlug));
+       try{
+           driver.get(Urls.baseUrl.concat(loginSlug));
 
-       //explicitwait
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(taolaoSel));
-        wait.until(new ExpectedConditionExWaitMore2Tabs(taolaoSel));
+           //explicitwait: timeoutException after 10s
+           WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+           wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(taolaoSel));
+           wait.until(new ExpectedConditionExWaitMore2Tabs(taolaoSel));
+       }catch (Exception e){
+           e.printStackTrace();
+       }
+
+       driver.quit();
     }
 }

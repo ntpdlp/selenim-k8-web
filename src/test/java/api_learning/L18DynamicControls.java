@@ -26,5 +26,7 @@ public class L18DynamicControls implements Urls {
        }catch (Exception e){
            e.printStackTrace();
        }
+
+       driver.quit();
     }
 }
