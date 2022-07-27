@@ -15,11 +15,16 @@ public class L18DynamicControls implements Urls {
     static private By taolaoSel = By.cssSelector("#nofoundID");
     public static void main(String[] args) {
        WebDriver driver = DriverFactory.getChromeDriver();
-       driver.get(Urls.baseUrl.concat(loginSlug));
 
-       //explicitwait
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(taolaoSel));
-        wait.until(new ExpectedConditionExWaitMore2Tabs(taolaoSel));
+       try{
+           driver.get(Urls.baseUrl.concat(loginSlug));
+
+           //explicitwait
+           WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+           wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(taolaoSel));
+           wait.until(new ExpectedConditionExWaitMore2Tabs(taolaoSel));
+       }catch (Exception e){
+           e.printStackTrace();
+       }
     }
 }
