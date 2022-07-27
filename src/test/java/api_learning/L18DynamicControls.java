@@ -6,8 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import support.ui.ExpectedConditionExWaitDynamicControl;
-import support.ui.ExpectedConditionExWaitMore2Tabs;
+import support.ui.ExpectedConditionExWaitEnable;
 import url.Urls;
 
 import java.time.Duration;
@@ -36,7 +35,12 @@ public class L18DynamicControls implements Urls {
            if(!inputElem.isEnabled()){
                enableButtonElem.click();
                WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
-               wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("loading")));
+
+               //solution 01
+               //wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("loading")));
+
+               //solution 02: why because there are 2 same input tags
+               wait.until(new ExpectedConditionExWaitEnable(By.cssSelector("#input-example input")));
            }
            inputElem.sendKeys("hello dynamic control!");
            Thread.sleep(2000);

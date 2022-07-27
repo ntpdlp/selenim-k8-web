@@ -4,11 +4,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 
-public class ExpectedConditionExWaitDynamicControl implements ExpectedCondition<Boolean> {
+public class ExpectedConditionExWaitEnable implements ExpectedCondition<Boolean> {
 
     private By cssSel;
 
-    public ExpectedConditionExWaitDynamicControl(By cssSel) {
+    public ExpectedConditionExWaitEnable(By cssSel) {
         this.cssSel = cssSel;
     }
 
