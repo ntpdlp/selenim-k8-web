@@ -2,13 +2,12 @@ package modules.components;
 
 import java.lang.reflect.Constructor;
 
-@L19AnnotationCSSSelector("#annotation-test")
+
 public class L19AnnotationTest {
 
 
     //how to triger value() : Generic no-boundary/no-limit
-    public <T> void executeAnnotation(Class<T> compClass){
-        Class<?>[] parameters = new Class[]{};
+    public <T> void getAnnotationComponent(Class<T> compClass){
 
         try{
             String value = compClass.getAnnotation(L19AnnotationCSSSelector.class).value();
@@ -21,6 +20,6 @@ public class L19AnnotationTest {
     }
 
     public static void main(String[] args) {
-        new L19AnnotationTest().executeAnnotation(L19AnnotationTest.class);
+        new L19AnnotationTest().getAnnotationComponent(L19AnnotationTest.class);
     }
 }
