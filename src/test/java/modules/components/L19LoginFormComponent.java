@@ -3,6 +3,7 @@ package modules.components;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+@L19AnnotationCSSSelector("#login-form-component")
 public class L19LoginFormComponent {
 
     protected WebDriver driver;
