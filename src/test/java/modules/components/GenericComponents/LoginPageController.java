@@ -4,13 +4,13 @@ import java.lang.reflect.Constructor;
 
 public class LoginPageController {
 
-    public <T extends LoginPage> void login(Class<T> page){
+    public <T extends LoginPage> void login(Class<T> loginPageClass){
         Class<?>[] parameters = new Class[]{};
 
         try{
-            Constructor<T> constructor = page.getConstructor(parameters);
+            Constructor<T> constructor = loginPageClass.getConstructor(parameters);
             T curInstance = constructor.newInstance();
-            System.out.println(page.getSimpleName() + "================" ); //print runtime class name
+            System.out.println(loginPageClass.getSimpleName() + "================" ); //print runtime class name
             curInstance.login();
         }catch (Exception e){
             e.printStackTrace();

@@ -1,6 +1,6 @@
 package modules.pages;
 
-import modules.components.L19LoginFormComponent;
+import modules.components.anotation.LoginFormComponent;
 import org.openqa.selenium.WebDriver;
 
 public class L19LoginPageVer02 {
@@ -11,7 +11,7 @@ public class L19LoginPageVer02 {
         this.driver = driver;
     }
 
-    public L19LoginFormComponent loginFormComp(){
-        return new L19LoginFormComponent(driver);
+    public LoginFormComponent loginFormComp(){
+        return new LoginFormComponent(driver);
     }
 }

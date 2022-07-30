@@ -1,17 +1,17 @@
-package modules.components;
+package modules.components.anotation;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-@L19AnnotationCSSSelector("#login-form-component")
-public class L19LoginFormComponent {
+@AnnotationCSSSelector("#login-form")
+public class LoginFormComponent {
 
     protected WebDriver driver;
     private By usernameSel = By.cssSelector("#username");
     private By passwordSel = By.cssSelector("#password");
     private By loginBtnSel = By.cssSelector("[type='submit']");
 
-    public L19LoginFormComponent(WebDriver driver) {
+    public LoginFormComponent(WebDriver driver) {
         this.driver = driver;
     }
 
