@@ -3,11 +3,11 @@ package modules.pages;
 import modules.components.anotation.LoginFormComponent;
 import org.openqa.selenium.WebDriver;
 
-public class L19LoginPageVer02 {
+public class L19LoginPageVer02_Component {
 
     protected WebDriver driver;
 
-    public L19LoginPageVer02(WebDriver driver) {
+    public L19LoginPageVer02_Component(WebDriver driver) {
         this.driver = driver;
     }
 

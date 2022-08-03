@@ -8,7 +8,7 @@ public class AnnotationTest {
     public <T> void getAnnotationComponent(Class<T> compClass){
 
         try{
-            String value = compClass.getAnnotation(AnnotationCSSSelector.class).value();
+            String value = compClass.getAnnotation(ComponentCSSSelector.class).value();
             System.out.println(value);
 
         }catch(Exception e){

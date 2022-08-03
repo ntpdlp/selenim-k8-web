@@ -3,7 +3,7 @@ package modules.components.anotation;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-@AnnotationCSSSelector("#login-form")
+@ComponentCSSSelector("#login-form")
 public class LoginFormComponent {
 
     protected WebDriver driver;

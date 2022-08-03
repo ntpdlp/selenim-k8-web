@@ -7,6 +7,6 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-public @interface AnnotationCSSSelector {
+public @interface ComponentCSSSelector {
     String value();
 }

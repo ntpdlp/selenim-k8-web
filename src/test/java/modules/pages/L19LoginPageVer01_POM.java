@@ -3,14 +3,14 @@ package modules.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class L19LoginPageVer01 {
+public class L19LoginPageVer01_POM {
 
     protected WebDriver driver;
     private By usernameSel = By.cssSelector("#username");
     private By passwordSel = By.cssSelector("#password");
     private By loginBtnSel = By.cssSelector("[type='submit']");
 
-    public L19LoginPageVer01(WebDriver driver) {
+    public L19LoginPageVer01_POM(WebDriver driver) {
         this.driver = driver;
     }
 
