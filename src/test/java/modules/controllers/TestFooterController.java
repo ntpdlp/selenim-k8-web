@@ -47,10 +47,10 @@ public class TestFooterController implements Urls {
     }
 
     private static void testFooterColumn(FooterColumnComponent footerColumnComp){
-        System.out.println(footerColumnComp.h3Elem());
-//        footerColumnComp.linksElem().forEach( link ->{
-//            System.out.println(link.getText());
-//            System.out.println(link.getAttribute("href"));
-//        });
+        System.out.println(footerColumnComp.h3Elem().getText());
+        footerColumnComp.linksElem().forEach( link ->{
+            System.out.println(link.getText());
+            System.out.println(link.getAttribute("href"));
+        });
     }
 }

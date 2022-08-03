@@ -12,18 +12,18 @@ public class FooterComponent extends Component {
     }
 
     public InformationColumnComponent InformationComp(){
-        return new InformationColumnComponent(driver,component);
+        return findComponent(InformationColumnComponent.class,driver);
     }
 
     public CustomerServiceColumnComponent CustomerServiceComp(){
-        return new CustomerServiceColumnComponent(driver,component);
+        return findComponent(CustomerServiceColumnComponent.class,driver);
     }
 
     public MyAccountColumnComponent MyAccountComp(){
-        return new MyAccountColumnComponent(driver,component);
+        return findComponent(MyAccountColumnComponent.class,driver);
     }
 
     public FollowUsColumnComponent FollowUsComp(){
-        return new FollowUsColumnComponent(driver,component);
+        return findComponent(FollowUsColumnComponent.class,driver);
     }
 }
