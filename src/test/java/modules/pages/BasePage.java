@@ -13,7 +13,7 @@ public class BasePage extends Component {
         this.driver=driver;
     }
 
-    public FooterComponent footerMenuWrapperComp(){
+    public FooterComponent footerComp(){
         return findComponent(FooterComponent.class,driver);
     }
 }

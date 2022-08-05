@@ -25,13 +25,13 @@ public class TestFooterController implements Urls {
     private static void testFooterHomepage(WebDriver driver){
         driver.get(Urls.baseUrlWebDemo);
         HomePage homePage = new HomePage(driver);
-        InformationColumnComponent informationColumnComp=homePage.footerMenuWrapperComp().InformationComp();
+        InformationColumnComponent informationColumnComp=homePage.footerComp().InformationComp();
 
-        CustomerServiceColumnComponent customerServiceColumnComp=homePage.footerMenuWrapperComp().CustomerServiceComp();
+        CustomerServiceColumnComponent customerServiceColumnComp=homePage.footerComp().CustomerServiceComp();
 
-        MyAccountColumnComponent myAccountColumnComp=homePage.footerMenuWrapperComp().MyAccountComp();
+        MyAccountColumnComponent myAccountColumnComp=homePage.footerComp().MyAccountComp();
 
-        FollowUsColumnComponent followUsColumnComp=homePage.footerMenuWrapperComp().FollowUsComp();
+        FollowUsColumnComponent followUsColumnComp=homePage.footerComp().FollowUsComp();
 
 
         testFooterColumn(informationColumnComp);

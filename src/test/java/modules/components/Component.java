@@ -1,6 +1,7 @@
 package modules.components;
 
 import modules.components.anotation.ComponentCSSSelector;
+import modules.components.anotation.ComponentXPathSelector;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -40,14 +41,14 @@ public class Component {
 
     public <T extends Component> List<T> findComponents( Class<T> commponentClass, WebDriver driver){
         //get component selector
-        String cssSel;
+        By componentSel;
         try{
-            cssSel = commponentClass.getAnnotation(ComponentCSSSelector.class).value();
+            componentSel = getCompSelector(commponentClass);
         }catch (Exception e){
-            throw new IllegalArgumentException("[ERR] The component class mush have annotation");
+            throw new IllegalArgumentException("[ERR] The component class must have annotation");
         }
-        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector(cssSel)));
-        List<WebElement> websElem = component.findElements(By.cssSelector(cssSel));
+        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(componentSel));
+        List<WebElement> websElem = component.findElements(componentSel);
 
         //Constructor
         Class<T>[] params = new Class[]{WebDriver.class,WebElement.class};
@@ -70,5 +71,17 @@ public class Component {
         }).collect(Collectors.toList());
 
         return components;
+    }
+
+    private By getCompSelector(Class<? extends Component> componentClass){
+        if(componentClass.isAnnotationPresent(ComponentCSSSelector.class))
+            return By.cssSelector(componentClass.getAnnotation(ComponentCSSSelector.class).value());
+        else if (componentClass.isAnnotationPresent(ComponentXPathSelector.class)) {
+            return By.xpath(componentClass.getAnnotation(ComponentXPathSelector.class).value());
+        }else{
+            throw new IllegalArgumentException("Component class "+ componentClass.getSimpleName() +
+                    " must have annotation: " + ComponentCSSSelector.class.getSimpleName() +
+                    " or, " + ComponentXPathSelector.class.getSimpleName());
+        }
     }
 }
