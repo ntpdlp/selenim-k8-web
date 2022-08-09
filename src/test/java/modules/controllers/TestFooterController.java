@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+import test_flows.global.FooterTestFlow;
 import url.Urls;
 
 import java.util.ArrayList;
@@ -14,9 +15,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class TestFooterController implements Urls {
-
-
-
 
 //    @BeforeTest
 //    public void setup(){
@@ -34,10 +32,9 @@ public class TestFooterController implements Urls {
             MyAccountColumnComponent myAccountColumnComp=homePage.footerComp().MyAccountComp();
             FollowUsColumnComponent followUsColumnComp=homePage.footerComp().FollowUsComp();
 
-            testFooterColumn(informationColumnComp);
-            testFooterColumn(customerServiceColumnComp);
-            testFooterColumn(myAccountColumnComp);
-            testFooterColumn(followUsColumnComp);
+            FooterTestFlow footerTestFlow = new FooterTestFlow();
+            footerTestFlow.verifyFooterComponent(informationColumnComp,customerServiceColumnComp,myAccountColumnComp,followUsColumnComp);
+
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -62,19 +59,12 @@ public class TestFooterController implements Urls {
     @Test
     public void testFooterLoginPage(){
         SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(1,3);
+        softAssert.assertEquals(1,1);
         softAssert.assertEquals(3,3);
-        softAssert.assertEquals(true,false);
         softAssert.assertAll();
         System.out.println("hello");
 
     }
 
-    private static void testFooterColumn(FooterColumnComponent footerColumnComp){
-        System.out.println(footerColumnComp.h3Elem().getText());
-        footerColumnComp.linksElem().forEach( link ->{
-            System.out.println(link.getText());
-            System.out.println(link.getAttribute("href"));
-        });
-    }
+
 }
