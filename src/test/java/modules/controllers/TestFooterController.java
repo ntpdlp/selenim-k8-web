@@ -35,6 +35,8 @@ public class TestFooterController implements Urls {
             FooterTestFlow footerTestFlow = new FooterTestFlow();
             footerTestFlow.verifyFooterComponent(informationColumnComp,customerServiceColumnComp,myAccountColumnComp,followUsColumnComp);
 
+
+
         }catch (Exception e){
             e.printStackTrace();
         }
