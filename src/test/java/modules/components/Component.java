@@ -15,7 +15,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Component {
+public class   Component {
 
     protected WebDriver driver;
     protected WebDriverWait wait;
@@ -25,6 +25,10 @@ public class Component {
         this.driver = driver;
         this.component = component;
         this.wait = new WebDriverWait(this.driver,Duration.ofSeconds(15)); //implicit wait generally
+    }
+
+    public WebElement getComponent(){
+        return component;
     }
 
     public WebElement findElement(By by){

@@ -1,4 +1,4 @@
-package modules.components.footer;
+package modules.components.global.footer;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,11 +16,11 @@ public class FooterColumnComponent extends FooterComponent {
     }
 
     public WebElement h3Elem(){
-        return component.findElement(h3Sel);
+        return findElement(h3Sel);
     }
 
     public List<WebElement> linksElem(){
-        return component.findElements(linksSel);
+        return findElements(linksSel);
     }
 
 

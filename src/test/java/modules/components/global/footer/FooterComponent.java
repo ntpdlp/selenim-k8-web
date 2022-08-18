@@ -1,4 +1,4 @@
-package modules.components.footer;
+package modules.components.global.footer;
 
 import modules.components.Component;
 import modules.components.anotation.ComponentCSSSelector;
