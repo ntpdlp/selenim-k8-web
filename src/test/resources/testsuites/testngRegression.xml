@@ -3,7 +3,7 @@
 <suite name="RegressionTest" verbose="1" >
     <test name="GlobalUI" >
         <classes>
-            <class name="modules.controllers.TestFooterController" />
+            <class name="test.global.footer.TestFooterController" />
         </classes>
     </test>
 
