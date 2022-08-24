@@ -1,4 +1,4 @@
-package test.global.footer;
+package test;
 
 import driver.DriverFactory;
 import io.qameta.allure.Allure;

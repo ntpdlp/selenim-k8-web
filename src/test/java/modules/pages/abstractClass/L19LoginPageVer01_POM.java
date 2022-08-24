@@ -1,4 +1,4 @@
-package modules.pages;
+package modules.pages.abstractClass;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

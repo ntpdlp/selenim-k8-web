@@ -1,6 +1,8 @@
-package modules.pages;
+package modules.pages.abstractClass;
 
 import driver.DriverFactory;
+import modules.pages.abstractClass.L19LoginPageVer01_POM;
+import modules.pages.abstractClass.L19LoginPageVer02_Component;
 import org.openqa.selenium.WebDriver;
 import url.Urls;
 

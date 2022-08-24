@@ -1,12 +1,12 @@
 package test.global.footer;
 
-import io.qameta.allure.internal.shadowed.jackson.annotation.JsonTypeInfo;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import test.BaseTest;
 import test_flows.global.FooterTestFlow;
 import url.Urls;
 
-public class TestFooterController extends BaseTest{
+public class TestFooterController extends BaseTest {
 
 
 

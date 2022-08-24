@@ -1,4 +1,4 @@
-package modules.pages;
+package modules.pages.abstractClass;
 
 import modules.components.anotation.LoginFormComponent;
 import org.openqa.selenium.WebDriver;
