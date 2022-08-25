@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @ComponentCSSSelector(".product-essential")
 public class OwnComputerDetailEssentialComponent extends ComputerDetailEssentialComponent{
@@ -42,7 +44,7 @@ public class OwnComputerDetailEssentialComponent extends ComputerDetailEssential
         for (WebElement option : allOptions) {
             String currentOptionText = option.getText();
             String optionTextWithoutSpaces = currentOptionText.trim().replace(" ", "");
-            if(optionTextWithoutSpaces.startsWith(type)){
+            if(optionTextWithoutSpaces.startsWith(type.trim().replace(" ", ""))){
                 fullStrOption = currentOptionText;
                 break;
             }
@@ -55,4 +57,6 @@ public class OwnComputerDetailEssentialComponent extends ComputerDetailEssential
         select.selectByVisibleText(fullStrOption);
         return fullStrOption;
     }
+
+
 }
