@@ -3,6 +3,7 @@ package modules.pages;
 import modules.components.Component;
 import modules.components.global.footer.FooterComponent;
 import modules.components.global.TopMenuComponent;
+import modules.components.global.headers.HeaderComponent;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -14,6 +15,9 @@ public class BasePage extends Component {
         this.driver=driver;
     }
 
+    public HeaderComponent headerComp(){
+        return findComponent(HeaderComponent.class,driver);
+    }
 
     public TopMenuComponent topMenuComponent(){
         return findComponent(TopMenuComponent.class,driver);
