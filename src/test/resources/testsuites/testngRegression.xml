@@ -3,7 +3,8 @@
 <suite name="RegressionTest" verbose="1" >
     <test name="GlobalUI" >
         <classes>
-            <class name="test.global.footer.TestFooterController" />
+            <class name="test.computer.BuildYourCheapComputer" />
+            <class name="test.computer.BuildYourOwnComputer" />
         </classes>
     </test>
 

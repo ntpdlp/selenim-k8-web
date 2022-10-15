@@ -99,6 +99,7 @@ public class   Component {
     }
 
     private void scrollToElement(String position, WebElement element){
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(" + position + ");", element);
+        String script = "arguments[0].scrollIntoView(placeHolder);";
+        ((JavascriptExecutor) driver).executeScript(script.replace("placeHolder",position), element);
     }
 }
