@@ -41,7 +41,7 @@ public class Main {
         }
 
         // We will parallel base on maximum parallel session
-        final int MAX_PARALLEL_SESSION = 4;
+        final int MAX_PARALLEL_SESSION = 3;
         List<String> testGroupNames = new ArrayList<>();
         for (int index = 0; index < MAX_PARALLEL_SESSION; index++) {
             testGroupNames.add("Group " + (index + 1));
