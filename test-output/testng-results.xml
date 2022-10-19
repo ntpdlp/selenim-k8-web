@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="16" passed="9" failed="0" skipped="5">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-18T21:42:30 CDT" name="Regression" finished-at="2022-10-18T21:42:51 CDT" duration-ms="20811">
+    <groups>
+      <group name="smoke">
+        <method signature="DataProviderComputer.testDataProvider([Ltestdata.computer.ComputerDataModel;)[pri:0, instance:test.testNG.DataProviderComputer@1aafa419]" name="testDataProvider" class="test.testNG.DataProviderComputer"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2022-10-18T21:42:30 CDT" name="Group 2" finished-at="2022-10-18T21:42:30 CDT" duration-ms="402">
+      <class name="test.testNG.LearnDataProvider">
+        <test-method signature="testDataProvider(test.testNG.LearnDataProvider$User)[pri:0, instance:test.testNG.LearnDataProvider@399f45b1]" started-at="2022-10-18T21:42:30 CDT" name="testDataProvider" data-provider="usernameData" finished-at="2022-10-18T21:42:30 CDT" duration-ms="179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User{name='teo', age=5}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider -->
+        <test-method signature="testDataProvider(test.testNG.LearnDataProvider$User)[pri:0, instance:test.testNG.LearnDataProvider@399f45b1]" started-at="2022-10-18T21:42:30 CDT" name="testDataProvider" data-provider="usernameData" finished-at="2022-10-18T21:42:30 CDT" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User{name='ti', age=15}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider -->
+        <test-method signature="testDataProvider(test.testNG.LearnDataProvider$User)[pri:0, instance:test.testNG.LearnDataProvider@399f45b1]" started-at="2022-10-18T21:42:30 CDT" name="testDataProvider" data-provider="usernameData" finished-at="2022-10-18T21:42:30 CDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User{name='tun', age=25}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider -->
+      </class> <!-- test.testNG.LearnDataProvider -->
+    </test> <!-- Group 2 -->
+    <test started-at="2022-10-18T21:42:30 CDT" name="Group 1" finished-at="2022-10-18T21:42:30 CDT" duration-ms="401">
+      <class name="test.testNG.DataProviderComputer">
+        <test-method signature="testDataProvider([Ltestdata.computer.ComputerDataModel;)[pri:0, instance:test.testNG.DataProviderComputer@1aafa419]" started-at="2022-10-18T21:42:30 CDT" name="testDataProvider" data-provider="computerData" finished-at="2022-10-18T21:42:30 CDT" duration-ms="128" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ltestdata.computer.ComputerDataModel;@6e797ed2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider -->
+        <test-method signature="testDataProvider([Ltestdata.computer.ComputerDataModel;)[pri:0, instance:test.testNG.DataProviderComputer@1aafa419]" started-at="2022-10-18T21:42:30 CDT" name="testDataProvider" data-provider="computerData" finished-at="2022-10-18T21:42:30 CDT" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ltestdata.computer.ComputerDataModel;@292750b8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider -->
+        <test-method signature="testDataProvider([Ltestdata.computer.ComputerDataModel;)[pri:0, instance:test.testNG.DataProviderComputer@1aafa419]" started-at="2022-10-18T21:42:30 CDT" name="testDataProvider" data-provider="computerData" finished-at="2022-10-18T21:42:30 CDT" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ltestdata.computer.ComputerDataModel;@1e301bd0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider -->
+      </class> <!-- test.testNG.DataProviderComputer -->
+    </test> <!-- Group 1 -->
+    <test started-at="2022-10-18T21:42:30 CDT" name="Group 3" finished-at="2022-10-18T21:42:50 CDT" duration-ms="19761">
+      <class name="test.computer.BuildYourOwnComputer">
+        <test-method is-config="true" signature="startTest(java.lang.String)[pri:0, instance:test.computer.BuildYourOwnComputer@22ff4249]" started-at="2022-10-18T21:42:30 CDT" name="startTest" description="Init browser session" finished-at="2022-10-18T21:42:30 CDT" duration-ms="39" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="TC01_BuildYourOwnComputer(testdata.computer.ComputerDataModel)[pri:0, instance:test.computer.BuildYourOwnComputer@22ff4249]" started-at="2022-10-18T21:42:30 CDT" name="TC01_BuildYourOwnComputer" data-provider="computerData" finished-at="2022-10-18T21:42:49 CDT" duration-ms="19450" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ComputerDataModel{processorType='2.2GHz', ram='8GB', os='Ubuntu', hdd='400 GB', software='Microsoft Office'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_BuildYourOwnComputer -->
+        <test-method is-config="true" signature="captureScreenShot(org.testng.ITestResult)[pri:0, instance:test.computer.BuildYourOwnComputer@22ff4249]" started-at="2022-10-18T21:42:49 CDT" name="captureScreenShot" finished-at="2022-10-18T21:42:49 CDT" duration-ms="2" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC01_BuildYourOwnComputer status=SUCCESS method=BuildYourOwnComputer.TC01_BuildYourOwnComputer(testdata.computer.ComputerDataModel)[pri:0, instance:test.computer.BuildYourOwnComputer@22ff4249] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[class driver.DriverFactory cannot be cast to class org.openqa.selenium.TakesScreenshot (driver.DriverFactory and org.openqa.selenium.TakesScreenshot are in unnamed module of loader 'app')]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: class driver.DriverFactory cannot be cast to class org.openqa.selenium.TakesScreenshot (driver.DriverFactory and org.openqa.selenium.TakesScreenshot are in unnamed module of loader 'app')
+at test.BaseTest.captureScreenShot(BaseTest.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:772)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:748)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShot -->
+        <test-method signature="TC01_BuildYourOwnComputer(testdata.computer.ComputerDataModel)[pri:0, instance:test.computer.BuildYourOwnComputer@22ff4249]" started-at="2022-10-18T21:42:49 CDT" name="TC01_BuildYourOwnComputer" data-provider="computerData" finished-at="2022-10-18T21:42:49 CDT" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ComputerDataModel{processorType='2.5GHz', ram='4GB', os='Windows 7', hdd='320 GB', software='Acrobat Reader'}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[class driver.DriverFactory cannot be cast to class org.openqa.selenium.TakesScreenshot (driver.DriverFactory and org.openqa.selenium.TakesScreenshot are in unnamed module of loader 'app')]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: class driver.DriverFactory cannot be cast to class org.openqa.selenium.TakesScreenshot (driver.DriverFactory and org.openqa.selenium.TakesScreenshot are in unnamed module of loader 'app')
+at test.BaseTest.captureScreenShot(BaseTest.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:772)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:748)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_BuildYourOwnComputer -->
+        <test-method is-config="true" signature="captureScreenShot(org.testng.ITestResult)[pri:0, instance:test.computer.BuildYourOwnComputer@22ff4249]" started-at="2022-10-18T21:42:49 CDT" name="captureScreenShot" finished-at="2022-10-18T21:42:49 CDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShot -->
+        <test-method signature="TC01_BuildYourOwnComputer(testdata.computer.ComputerDataModel)[pri:0, instance:test.computer.BuildYourOwnComputer@22ff4249]" started-at="2022-10-18T21:42:49 CDT" name="TC01_BuildYourOwnComputer" data-provider="computerData" finished-at="2022-10-18T21:42:49 CDT" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ComputerDataModel{processorType='2.2GHz', ram='2GB', os='Windows 10', hdd='320 GB', software='Total Commander'}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[class driver.DriverFactory cannot be cast to class org.openqa.selenium.TakesScreenshot (driver.DriverFactory and org.openqa.selenium.TakesScreenshot are in unnamed module of loader 'app')]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: class driver.DriverFactory cannot be cast to class org.openqa.selenium.TakesScreenshot (driver.DriverFactory and org.openqa.selenium.TakesScreenshot are in unnamed module of loader 'app')
+at test.BaseTest.captureScreenShot(BaseTest.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:772)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:748)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_BuildYourOwnComputer -->
+        <test-method is-config="true" signature="captureScreenShot(org.testng.ITestResult)[pri:0, instance:test.computer.BuildYourOwnComputer@22ff4249]" started-at="2022-10-18T21:42:49 CDT" name="captureScreenShot" finished-at="2022-10-18T21:42:49 CDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShot -->
+        <test-method is-config="true" signature="cleanupTest()[pri:0, instance:test.computer.BuildYourOwnComputer@22ff4249]" started-at="2022-10-18T21:42:49 CDT" name="cleanupTest" finished-at="2022-10-18T21:42:50 CDT" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanupTest -->
+      </class> <!-- test.computer.BuildYourOwnComputer -->
+    </test> <!-- Group 3 -->
+    <test started-at="2022-10-18T21:42:30 CDT" name="Group 4" finished-at="2022-10-18T21:42:51 CDT" duration-ms="20810">
+      <class name="test.computer.BuildYourCheapComputer">
+        <test-method is-config="true" signature="startTest(java.lang.String)[pri:0, instance:test.computer.BuildYourCheapComputer@c730b35]" started-at="2022-10-18T21:42:30 CDT" name="startTest" description="Init browser session" finished-at="2022-10-18T21:42:30 CDT" duration-ms="40" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="TC01_BuildYourOwnCheapComputer(testdata.computer.ComputerDataModel)[pri:0, instance:test.computer.BuildYourCheapComputer@c730b35]" started-at="2022-10-18T21:42:30 CDT" name="TC01_BuildYourOwnCheapComputer" data-provider="computerData" finished-at="2022-10-18T21:42:48 CDT" duration-ms="18513" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ComputerDataModel{processorType='Fast', ram='8 GB', os='null', hdd='320 GB', software='Image Viever'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_BuildYourOwnCheapComputer -->
+        <test-method is-config="true" signature="captureScreenShot(org.testng.ITestResult)[pri:0, instance:test.computer.BuildYourCheapComputer@c730b35]" started-at="2022-10-18T21:42:48 CDT" name="captureScreenShot" finished-at="2022-10-18T21:42:48 CDT" duration-ms="13" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC01_BuildYourOwnCheapComputer status=SUCCESS method=BuildYourCheapComputer.TC01_BuildYourOwnCheapComputer(testdata.computer.ComputerDataModel)[pri:0, instance:test.computer.BuildYourCheapComputer@c730b35] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[class driver.DriverFactory cannot be cast to class org.openqa.selenium.TakesScreenshot (driver.DriverFactory and org.openqa.selenium.TakesScreenshot are in unnamed module of loader 'app')]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: class driver.DriverFactory cannot be cast to class org.openqa.selenium.TakesScreenshot (driver.DriverFactory and org.openqa.selenium.TakesScreenshot are in unnamed module of loader 'app')
+at test.BaseTest.captureScreenShot(BaseTest.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:772)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:748)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShot -->
+        <test-method signature="TC01_BuildYourOwnCheapComputer(testdata.computer.ComputerDataModel)[pri:0, instance:test.computer.BuildYourCheapComputer@c730b35]" started-at="2022-10-18T21:42:49 CDT" name="TC01_BuildYourOwnCheapComputer" data-provider="computerData" finished-at="2022-10-18T21:42:49 CDT" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ComputerDataModel{processorType='Medium', ram='4 GB', os='null', hdd='400 GB', software='Office Suite'}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[class driver.DriverFactory cannot be cast to class org.openqa.selenium.TakesScreenshot (driver.DriverFactory and org.openqa.selenium.TakesScreenshot are in unnamed module of loader 'app')]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: class driver.DriverFactory cannot be cast to class org.openqa.selenium.TakesScreenshot (driver.DriverFactory and org.openqa.selenium.TakesScreenshot are in unnamed module of loader 'app')
+at test.BaseTest.captureScreenShot(BaseTest.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:772)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:748)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_BuildYourOwnCheapComputer -->
+        <test-method is-config="true" signature="captureScreenShot(org.testng.ITestResult)[pri:0, instance:test.computer.BuildYourCheapComputer@c730b35]" started-at="2022-10-18T21:42:49 CDT" name="captureScreenShot" finished-at="2022-10-18T21:42:49 CDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShot -->
+        <test-method signature="TC01_BuildYourOwnCheapComputer(testdata.computer.ComputerDataModel)[pri:0, instance:test.computer.BuildYourCheapComputer@c730b35]" started-at="2022-10-18T21:42:49 CDT" name="TC01_BuildYourOwnCheapComputer" data-provider="computerData" finished-at="2022-10-18T21:42:49 CDT" duration-ms="1" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ComputerDataModel{processorType='Slow', ram='2 GB', os='null', hdd='320 GB', software='Other Office Suite'}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[class driver.DriverFactory cannot be cast to class org.openqa.selenium.TakesScreenshot (driver.DriverFactory and org.openqa.selenium.TakesScreenshot are in unnamed module of loader 'app')]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: class driver.DriverFactory cannot be cast to class org.openqa.selenium.TakesScreenshot (driver.DriverFactory and org.openqa.selenium.TakesScreenshot are in unnamed module of loader 'app')
+at test.BaseTest.captureScreenShot(BaseTest.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:772)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:748)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_BuildYourOwnCheapComputer -->
+        <test-method is-config="true" signature="captureScreenShot(org.testng.ITestResult)[pri:0, instance:test.computer.BuildYourCheapComputer@c730b35]" started-at="2022-10-18T21:42:49 CDT" name="captureScreenShot" finished-at="2022-10-18T21:42:49 CDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShot -->
+        <test-method is-config="true" signature="cleanupTest()[pri:0, instance:test.computer.BuildYourCheapComputer@c730b35]" started-at="2022-10-18T21:42:50 CDT" name="cleanupTest" finished-at="2022-10-18T21:42:51 CDT" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanupTest -->
+      </class> <!-- test.computer.BuildYourCheapComputer -->
+      <class name="test.global.footer.TestFooterController">
+        <test-method signature="testFooterHomePage()[pri:0, instance:test.global.footer.TestFooterController@206a70ef]" started-at="2022-10-18T21:42:49 CDT" name="testFooterHomePage" finished-at="2022-10-18T21:42:50 CDT" duration-ms="1644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFooterHomePage -->
+        <test-method is-config="true" signature="captureScreenShot(org.testng.ITestResult)[pri:0, instance:test.global.footer.TestFooterController@206a70ef]" started-at="2022-10-18T21:42:50 CDT" name="captureScreenShot" finished-at="2022-10-18T21:42:50 CDT" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testFooterHomePage status=SUCCESS method=TestFooterController.testFooterHomePage()[pri:0, instance:test.global.footer.TestFooterController@206a70ef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[class driver.DriverFactory cannot be cast to class org.openqa.selenium.TakesScreenshot (driver.DriverFactory and org.openqa.selenium.TakesScreenshot are in unnamed module of loader 'app')]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: class driver.DriverFactory cannot be cast to class org.openqa.selenium.TakesScreenshot (driver.DriverFactory and org.openqa.selenium.TakesScreenshot are in unnamed module of loader 'app')
+at test.BaseTest.captureScreenShot(BaseTest.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:772)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:748)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShot -->
+        <test-method signature="testScreenShotTakenFailure()[pri:0, instance:test.global.footer.TestFooterController@206a70ef]" started-at="2022-10-18T21:42:50 CDT" name="testScreenShotTakenFailure" finished-at="2022-10-18T21:42:50 CDT" duration-ms="0" status="SKIP">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[class driver.DriverFactory cannot be cast to class org.openqa.selenium.TakesScreenshot (driver.DriverFactory and org.openqa.selenium.TakesScreenshot are in unnamed module of loader 'app')]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: class driver.DriverFactory cannot be cast to class org.openqa.selenium.TakesScreenshot (driver.DriverFactory and org.openqa.selenium.TakesScreenshot are in unnamed module of loader 'app')
+at test.BaseTest.captureScreenShot(BaseTest.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:772)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:748)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScreenShotTakenFailure -->
+        <test-method is-config="true" signature="captureScreenShot(org.testng.ITestResult)[pri:0, instance:test.global.footer.TestFooterController@206a70ef]" started-at="2022-10-18T21:42:50 CDT" name="captureScreenShot" finished-at="2022-10-18T21:42:50 CDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenShot -->
+      </class> <!-- test.global.footer.TestFooterController -->
+    </test> <!-- Group 4 -->
+  </suite> <!-- Regression -->
+</testng-results>

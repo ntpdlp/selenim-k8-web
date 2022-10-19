@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [Regression]">
+  <test thread-count="4" parallel="tests" name="Group 3(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.computer.BuildYourOwnComputer">
+        <methods>
+          <include name="startTest"/>
+          <include name="captureScreenShot"/>
+          <include name="cleanupTest"/>
+          <include name="TC01_BuildYourOwnComputer"/>
+        </methods>
+      </class> <!-- test.computer.BuildYourOwnComputer -->
+    </classes>
+  </test> <!-- Group 3(failed) -->
+  <test thread-count="4" parallel="tests" name="Group 4(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.computer.BuildYourCheapComputer">
+        <methods>
+          <include name="TC01_BuildYourOwnCheapComputer"/>
+          <include name="startTest"/>
+          <include name="captureScreenShot"/>
+          <include name="cleanupTest"/>
+        </methods>
+      </class> <!-- test.computer.BuildYourCheapComputer -->
+      <class name="test.global.footer.TestFooterController">
+        <methods>
+          <include name="testScreenShotTakenFailure"/>
+          <include name="startTest"/>
+          <include name="captureScreenShot"/>
+          <include name="cleanupTest"/>
+        </methods>
+      </class> <!-- test.global.footer.TestFooterController -->
+    </classes>
+  </test> <!-- Group 4(failed) -->
+</suite> <!-- Failed suite [Regression] -->
