@@ -11,6 +11,7 @@ public interface Urls {
     String floatMenuSlug = "/floating_menu";
 
     //demo web
-    String baseUrlWebDemo ="http://demowebshop.tricentis.com";
+ //   String baseUrlWebDemo ="http://demowebshop.tricentis.com";
+    String baseUrlWebDemo = System.getenv("baseUrl"); // "http://demowebshop.tricentis.com";
 
 }
